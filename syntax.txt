@@ -1,0 +1,19 @@
+1. while Loop 
+while [ condition ]
+do
+	command1
+	command2
+done
+
+2. For Loop 
+for variable in list
+do
+    # Commands to be executed for each item in the list
+done
+
+3. Until Loop
+until [ conditional statement ]
+do
+command1
+command2
+done
