@@ -1,0 +1,298 @@
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.146.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+This message is shown once a day. To disable it please create the
+/home/vinoth/.hushlogin file.
+vinoth@Vinoth:~$ ls
+Zen
+vinoth@Vinoth:~$ pwd
+/home/vinoth
+vinoth@Vinoth:~$ cd /
+vinoth@Vinoth:/$ ls
+Docker  boot  etc   init  lib32  libx32      media  opt   root  sbin  srv  tmp  var
+bin     dev   home  lib   lib64  lost+found  mnt    proc  run   snap  sys  usr
+vinoth@Vinoth:/$ cd /home/
+vinoth@Vinoth:/home$ ls -lrt
+total 4
+drwxr-x--- 5 vinoth vinoth 4096 Mar 23 11:05 vinoth
+vinoth@Vinoth:/home$ cd vim
+-bash: cd: vim: No such file or directory
+vinoth@Vinoth:/home$ cd vinoth/
+vinoth@Vinoth:~$ ls -lrt
+total 4
+drwxr-xr-x 2 vinoth vinoth 4096 Mar 30 09:10 Zen
+vinoth@Vinoth:~$ cd zen
+-bash: cd: zen: No such file or directory
+vinoth@Vinoth:~$ cd Zen/
+vinoth@Vinoth:~/Zen$ ls -lrt
+total 24
+-rwxr-xr-x 1 vinoth vinoth  443 Mar 21 09:09 status.sh
+-rw-r--r-- 1 vinoth vinoth    0 Mar 21 09:10 your_file.txt
+-rwxr-xr-x 1 vinoth vinoth  213 Mar 21 09:11 rename.sh
+-rw-r--r-- 1 vinoth vinoth  308 Mar 21 09:14 zen.txt
+-rw-r--r-- 1 vinoth vinoth  252 Mar 21 10:14 syntax.txt
+-rw-r--r-- 1 vinoth vinoth   78 Mar 30 09:05 DevOps123.pem:Zone.Identifier
+-rw-r--r-- 1 vinoth vinoth 1674 Mar 30 09:05 DevOps123.pem
+vinoth@Vinoth:~/Zen$ chmod 400 "DevOps123.pem"
+vinoth@Vinoth:~/Zen$ ssh -i "DevOps123.pem" ubuntu@ec2-13-126-197-181.ap-south-1.compute.amazonaws.com
+The authenticity of host 'ec2-13-126-197-181.ap-south-1.compute.amazonaws.com (13.126.197.181)' can't be established.
+ED25519 key fingerprint is SHA256:wLQpVediGbTzOMgxECR5pLy0pbErp5HpgHVGXWo1x5w.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? Y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'ec2-13-126-197-181.ap-south-1.compute.amazonaws.com' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.5.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Sat Mar 30 03:41:35 UTC 2024
+
+  System load:  0.0068359375      Processes:             100
+  Usage of /:   20.4% of 7.57GB   Users logged in:       0
+  Memory usage: 21%               IPv4 address for eth0: 172.31.46.249
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-46-249:~$ sudo apt update
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1519 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [293 kB]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1644 kB]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [274 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1060 kB]
+Get:16 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [241 kB]
+Get:17 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22.1 kB]
+Get:18 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [49.6 kB]
+Get:19 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [12.0 kB]
+Get:20 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+Get:21 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+Get:22 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.0 kB]
+Get:23 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:24 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:25 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [28.4 kB]
+Get:26 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.2 kB]
+Get:27 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+Get:28 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1303 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [233 kB]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1616 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [271 kB]
+Get:33 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [852 kB]
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [163 kB]
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.8 kB]
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37.1 kB]
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7476 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Fetched 30.4 MB in 6s (5374 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+40 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-31-46-249:~$ sudo apt install docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base pigz runc ubuntu-fan
+Suggested packages:
+  ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc rinse zfs-fuse | zfsutils
+The following NEW packages will be installed:
+  bridge-utils containerd dns-root-data dnsmasq-base docker.io pigz runc ubuntu-fan
+0 upgraded, 8 newly installed, 0 to remove and 40 not upgraded.
+Need to get 69.8 MB of archives.
+After this operation, 267 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 bridge-utils amd64 1.7-1ubuntu3 [34.4 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 runc amd64 1.1.7-0ubuntu1~22.04.2 [4267 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 containerd amd64 1.7.2-0ubuntu1~22.04.1 [36.0 MB]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dns-root-data all 2023112702~ubuntu0.22.04.1 [5136 B]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dnsmasq-base amd64 2.90-0ubuntu0.22.04.1 [374 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 docker.io amd64 24.0.5-0ubuntu1~22.04.1 [28.9 MB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 ubuntu-fan all 0.12.16 [35.2 kB]
+Fetched 69.8 MB in 1s (50.8 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package pigz.
+(Reading database ... 65273 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.6-1_amd64.deb ...
+Unpacking pigz (2.6-1) ...
+Selecting previously unselected package bridge-utils.
+Preparing to unpack .../1-bridge-utils_1.7-1ubuntu3_amd64.deb ...
+Unpacking bridge-utils (1.7-1ubuntu3) ...
+Selecting previously unselected package runc.
+Preparing to unpack .../2-runc_1.1.7-0ubuntu1~22.04.2_amd64.deb ...
+Unpacking runc (1.1.7-0ubuntu1~22.04.2) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../3-containerd_1.7.2-0ubuntu1~22.04.1_amd64.deb ...
+Unpacking containerd (1.7.2-0ubuntu1~22.04.1) ...
+Selecting previously unselected package dns-root-data.
+Preparing to unpack .../4-dns-root-data_2023112702~ubuntu0.22.04.1_all.deb ...
+Unpacking dns-root-data (2023112702~ubuntu0.22.04.1) ...
+Selecting previously unselected package dnsmasq-base.
+Preparing to unpack .../5-dnsmasq-base_2.90-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking dnsmasq-base (2.90-0ubuntu0.22.04.1) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../6-docker.io_24.0.5-0ubuntu1~22.04.1_amd64.deb ...
+Unpacking docker.io (24.0.5-0ubuntu1~22.04.1) ...
+Selecting previously unselected package ubuntu-fan.
+Preparing to unpack .../7-ubuntu-fan_0.12.16_all.deb ...
+Unpacking ubuntu-fan (0.12.16) ...
+Setting up dnsmasq-base (2.90-0ubuntu0.22.04.1) ...
+Setting up runc (1.1.7-0ubuntu1~22.04.2) ...
+Setting up dns-root-data (2023112702~ubuntu0.22.04.1) ...
+Setting up bridge-utils (1.7-1ubuntu3) ...
+Setting up pigz (2.6-1) ...
+Setting up containerd (1.7.2-0ubuntu1~22.04.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up ubuntu-fan (0.12.16) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /lib/systemd/system/ubuntu-fan.service.
+Setting up docker.io (24.0.5-0ubuntu1~22.04.1) ...
+Adding group `docker' (GID 122) ...
+Done.
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for dbus (1.12.20-2ubuntu4.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-46-249:~$ sudo systemctl start docker
+ubuntu@ip-172-31-46-249:~$ sudo systemctl enable docker
+ubuntu@ip-172-31-46-249:~$ docker --version
+Docker version 24.0.5, build 24.0.5-0ubuntu1~22.04.1
+ubuntu@ip-172-31-46-249:~$ docker images
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+ubuntu@ip-172-31-46-249:~$ docker ps
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+ubuntu@ip-172-31-46-249:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ip-172-31-46-249:~$ sudo usermod -aG docker $USER
+ubuntu@ip-172-31-46-249:~$ logout
+Connection to ec2-13-126-197-181.ap-south-1.compute.amazonaws.com closed.
+vinoth@Vinoth:~/Zen$ ssh -i "DevOps123.pem" ubuntu@ec2-13-126-197-181.ap-south-1.compute.amazonaws.com
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.5.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Sat Mar 30 03:48:56 UTC 2024
+
+  System load:  0.00146484375     Processes:                99
+  Usage of /:   26.5% of 7.57GB   Users logged in:          0
+  Memory usage: 27%               IPv4 address for docker0: 172.17.0.1
+  Swap usage:   0%                IPv4 address for eth0:    172.31.46.249
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+40 updates can be applied immediately.
+30 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Sat Mar 30 03:41:36 2024 from 120.138.12.199
+ubuntu@ip-172-31-46-249:~$ ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 Mar 30 03:43 /var/run/docker.sock
+ubuntu@ip-172-31-46-249:~$ sudo systemctl restart docker
+ubuntu@ip-172-31-46-249:~$ ls
+ubuntu@ip-172-31-46-249:~$ dockor -version
+Command 'dockor' not found, did you mean:
+  command 'docker' from snap docker (24.0.5)
+  command 'docker' from deb podman-docker (3.4.4+ds1-1ubuntu1.22.04.2)
+  command 'docker' from deb docker.io (24.0.5-0ubuntu1~22.04.1)
+See 'snap info <snapname>' for additional versions.
+ubuntu@ip-172-31-46-249:~$ docker --version
+Docker version 24.0.5, build 24.0.5-0ubuntu1~22.04.1
+ubuntu@ip-172-31-46-249:~$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ip-172-31-46-249:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-46-249:~$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-46-249:~$ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+fd013442868c   bridge    bridge    local
+d10fa2332ed3   host      host      local
+8171d4ec1b95   none      null      local
+ubuntu@ip-172-31-46-249:~$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete
+Digest: sha256:53641cd209a4fecfc68e21a99871ce8c6920b2e7502df0a20671c6fccc73a7c6
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+ubuntu@ip-172-31-46-249:~$
