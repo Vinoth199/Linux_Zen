@@ -1,5 +1,5 @@
 #!/bin/bash
-# Fetch the current date.
+# Fetch the current date
 date
-# Fetch the current time.
+# Fetch the current time
 time
